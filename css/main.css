@@ -1,5 +1,6 @@
 body {
     padding-left: 200px;
+    background-color: #f0f0f0;
 }
 
 @media only screen and (max-width : 992px) {
@@ -8,10 +9,29 @@ body {
     }
 }
 
+a{
+    color: #161616;
+}
+
+.link{
+    color: #2BBBAD;
+}
+
 .menu-topo{
     background-color: #1a1a1a;
 }
 
 .tamanho-menu{
     width: 200px;
+}
+
+hr{
+    width: 80%;
+    color: #fff;
+}
+
+.rodape{
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
 }
