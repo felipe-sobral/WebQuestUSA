@@ -14,16 +14,18 @@
         
         
         <nav>
-            <div class="nav-wrapper menu-topo">
-                <a href="#!" class="brand-logo center">USA</a>
-                <a href="#" data-activates="menu" class="button-collapse"><i class="material-icons">menu</i></a>
+
+            <div class="nav-wrapper">
+                <a href="#" data-activates="menu" class="button-collapse menu-botao"><i class="material-icons">menu</i></a>
+            </div>
+            <div>
                 <ul class="side-nav fixed tamanho-menu" id="menu">
                     <li>
                         <div class="user-view">
                             <div class="background" style="background-color: #1A1A1A">
                                 <!--<img src="imagens/estatua_liberdade.jpg" width="200px">-->
                             </div>
-                            <a href="?p=introducao"><img class="circle" src="imagens/perfil.jpg"></a>
+                            <a href="?p=introducao"><img class="circle" src="imagens/perfil.jpg" style="width: 100%; height: 100%;"></a>
                             <a href="?p=introducao"><span class="white-text name">Colombinho</span></a>
                             <a href="?p=introducao"><span class="white-text email">Explorador</span></a>
                         </div>
@@ -36,8 +38,9 @@
                             <a class="collapsible-header" style="padding-left: 32px">Processos</a>
                             <div class="collapsible-body">
                                 <ul>
-                                    <li><a href="#!">Etapa 1</a></li>
-                                    <li><a href="#!">Etapa 2</a></li>
+                                    <li><a href="?p=etapa1">Etapa 1</a></li>
+                                    <li><a href="?p=etapa2">Etapa 2</a></li>
+                                    <li><a href="?p=etapa3">Etapa 3</a></li>
                                 </ul>
                                 <div class="divider"></div>
                             </div>
@@ -49,32 +52,39 @@
                     <li><a href="?p=sobre">Sobre</a></li>
                 </ul>
             </div>
+            
         </nav>
         
+        
+        <div style="margin-top: 64px">
+            <?php
 
-        <?php
+                $pagina = isset($_GET["p"]) ? $_GET["p"] : "unknow";
+                
+                switch($pagina){
+                    case "inicio":
+                        include_once "paginas/inicio.html";
+                        break;
 
-            $pagina = isset($_GET["p"]) ? $_GET["p"] : "unknow";
-            
-            switch($pagina){
-                case "inicio":
-                    include_once "paginas/inicio.html";
-                    break;
+                    case "introducao":
+                        include_once "paginas/introducao.html";
+                        break;
 
-                case "introducao":
-                    include_once "paginas/introducao.html";
-                    break;
+                    case "tarefa":
+                        include_once "paginas/tarefa.html";
+                        break;
 
-                case "tarefa":
-                    include_once "paginas/tarefa.html";
-                    break;
+                    case "etapa1":
+                        include_once "paginas/processos/e1.php";
+                        break;
 
-                default:
-                    include_once "paginas/inicio.html";
-            }
-        ?>
+                    default:
+                        include_once "paginas/inicio.html";
+                }
+            ?>
+        </div>
 
-        <div class="container rodape">
+        <div class="container rodape ">
             <span>Felipe V. Sobral - Luciene Santos</span><br>
             <span>Atualizado em 05/2019 - versão 1.0 - Trabalho acadêmico da disciplina de Didática da Computação na UFPR - Setor Palotina.</span>
         </div>
