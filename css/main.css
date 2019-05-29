@@ -18,7 +18,7 @@ a{
 }
 
 .menu-topo{
-    background-color: #1a1a1a;
+    background-image: url("../imagens/background-nav.png");
 }
 
 .tamanho-menu{
@@ -34,4 +34,5 @@ hr{
     width: 100%;
     text-align: center;
     margin-top: 5%;
+    margin-bottom: 2%;
 }

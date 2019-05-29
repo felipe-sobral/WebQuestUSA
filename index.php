@@ -20,11 +20,11 @@
                 <ul class="side-nav fixed tamanho-menu" id="menu">
                     <li>
                         <div class="user-view">
-                            <div class="background">
-                                <img src="imagens/estatua_liberdade.jpg" width="200px">
+                            <div class="background" style="background-color: #1A1A1A">
+                                <!--<img src="imagens/estatua_liberdade.jpg" width="200px">-->
                             </div>
                             <a href="?p=introducao"><img class="circle" src="imagens/perfil.jpg"></a>
-                            <a href="?p=introducao"><span class="white-text name">Colombozinho</span></a>
+                            <a href="?p=introducao"><span class="white-text name">Colombinho</span></a>
                             <a href="?p=introducao"><span class="white-text email">Explorador</span></a>
                         </div>
                     </li>
@@ -39,7 +39,7 @@
                                     <li><a href="#!">Etapa 1</a></li>
                                     <li><a href="#!">Etapa 2</a></li>
                                 </ul>
-                                <hr>
+                                <div class="divider"></div>
                             </div>
                         </li>
                     </ul>
@@ -75,7 +75,8 @@
         ?>
 
         <div class="container rodape">
-            <p>Atualizado em 05/2019 - versão 1.0 - Trabalho acadêmico da disciplina de Didática da Computação na UFPR - Setor Palotina.</p>
+            <span>Felipe V. Sobral - Luciene Santos</span><br>
+            <span>Atualizado em 05/2019 - versão 1.0 - Trabalho acadêmico da disciplina de Didática da Computação na UFPR - Setor Palotina.</span>
         </div>
 
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
