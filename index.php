@@ -75,7 +75,15 @@
                         break;
 
                     case "etapa1":
-                        include_once "paginas/processos/e1.php";
+                        include_once "paginas/processos/e1.html";
+                        break;
+
+                    case "etapa2":
+                        include_once "paginas/processos/e2.html";
+                        break;
+
+                    case "etapa3":
+                        include_once "paginas/processoas/e3.html";
                         break;
 
                     default:
