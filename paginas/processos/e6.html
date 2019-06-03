@@ -1,0 +1,48 @@
+<div class="container">
+        <div style="text-align: center; margin-top: 5%">
+            <img src="imagens/colombozinho/4.svg" style="width: 100px">
+        </div>
+        <div style="margin-top: 3%">
+            <div class="card-panel">
+                <article>
+                    <header style="text-align: center">
+                        <h5>Ops, temos um obstáculo!</h5>
+                        <p>Para continuarmos, vocês precisarão dizer qual é o setor econômico principal dos EUA.</p>
+                        <p><strong>CONTAMOS COM SUA AJUDA!</strong></p>
+                    </header>
+                    <main style="text-align: justify">  
+    
+                        <p>Para te ajudar com esta questão, utilize este recurso: <a href="https://pt.portal.santandertrade.com/analise-os-mercados/estados-unidos/economia" target="_BLANK" class="link">Abrir</a>.</p>
+                        
+                        <div class="divider"></div>
+                        <div class="input-field">
+                            <input id="setor" type="text">
+                            <label class="active" for="setor">Digite sua resposta aqui! Exemplo: Setor primário</label>
+                        </div>
+                        <p style="text-align: center"><button class="waves-effect waves-light btn green" onclick="verificar_resposta()">Validar resposta!</button> </p>
+                    </main>
+                    <footer style="text-align: center" id="aqui">
+                        <div class='divider'></div>
+                        <p>Caminho bloquado :(</p>
+                        <p><i class="material-icons">airplanemode_inactive</i></p>
+                    </footer>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        function verificar_resposta(){
+
+            if($("#setor").val() == "Setor terciário"){
+                alert("Parabéns! Você liberou o caminho =D");
+                
+                $("#aqui").html("<div class='divider'></div><p><strong>Foi difícil? Nem tanto, vai! Agora podemos seguir a viagem.</strong></p><a class='waves-effect waves-light btn pulse blue' href='?p=etapa7'>PRÓXIMA ETAPA</a>")
+            } else {
+                alert("você errou! Não desanime, tente novamente.");
+            }
+
+        }
+
+    </script>
