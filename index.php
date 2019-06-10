@@ -3,9 +3,9 @@
     <head>
 
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <link rel="stylesheet" href="bibliotecas/materialize.min.css">
         <link rel="stylesheet" href="css/main.css">
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="bibliotecas/jquery-3.4.1.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
         <title>WebQuest USA</title>
@@ -136,10 +136,10 @@
 
         <div class="container rodape ">
             <span>Felipe V. Sobral (xfelipesobral@gmail.com) - Luciene Santos (lucienensantos28@gmail.com)</span><br>
-            <span>Atualizado em 05/2019 - versão 1.0 - Trabalho acadêmico da disciplina de Didática da Computação na UFPR - Setor Palotina.</span>
+            <span>Atualizado em 06/2019 - versão 1.1 - Trabalho acadêmico da disciplina de Didática da Computação na UFPR - Setor Palotina.</span>
         </div>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <script src="bibliotecas/materialize.min.js"></script>
         <script>
             $( document ).ready(function() {
                 $(".button-collapse").sideNav();
